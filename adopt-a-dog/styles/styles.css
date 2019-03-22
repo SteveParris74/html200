@@ -159,6 +159,12 @@ nav ul {
   margin-bottom: 10%;
 }
 
+.blog-posts {
+  width: 80%;
+  height: 100px;
+  display: flex;
+}
+
 .blog img {
   float:left;
   width: 200px;
