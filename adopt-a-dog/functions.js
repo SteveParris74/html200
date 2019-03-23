@@ -1,3 +1,5 @@
+
+
 function murphyAlert() {
 
   let murphyAlert = alert ('I am Murphy. A large mix, You can bring me home for $123.45')
@@ -144,22 +146,22 @@ function runningTotal() {
 // //not sure where to go from here
 //
 // //form attempt
-// let formElement = document.querySelector('form');
-// console.log(formElement);
-//
-// formElement.addEventListener('submit',function(e){
-//   e.preventDefault();
-//
-//   const inputValue = formElement.elements[0].value;
-//   const dogName = formElement.elements[1].value;
-//   //do code//
-//   const dataToSubmit = {
-//   name: inputValue,
-//   dog: dogName
-// };
-//
-//   console.log(dataToSubmit);
-// })
+let formElement = document.querySelector('form');
+console.log(formElement);
+
+formElement.addEventListener('submit',function(e){
+  e.preventDefault();
+
+  const inputValue = formElement.elements[0].value;
+  const dogName = formElement.elements[1].value;
+  //do code//
+  const dataToSubmit = {
+  name: inputValue,
+  dog: dogName
+};
+
+  console.log(dataToSubmit);
+})
 const blogPosts = [
   {
     image: 'images/wyatt-ryan-367017-unsplash.jpg',
@@ -175,6 +177,6 @@ console.log(blogPostContainer);
 
 for (let i = 0; i < blogPosts.length; i++) {
   let blogPost = document.createElement('article');
-  blogPost.innerHTML = '<h1>' + blogPosts[i].headline + '</h1>' + '<p>' + blogPosts[i].blogText +;
+  blogPost.innerHTML = '<h1>' + blogPosts[i].headline + '</h1>' + '<p>' + blogPosts[i].blogText + '</p>';
   blogPostContainer.appendChild(blogPost)
 }
